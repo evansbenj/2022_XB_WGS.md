@@ -1,6 +1,11 @@
 # READ ME
+Working in this directory:
+```
+/home/ben/projects/rrg-ben/ben/2022_XB_WGS/
+```
 
-Now have WGS data from a total of 9 females and 11 males from west Kenya.  Added to this we have WGS data from 2 lab individuals (1 M, 1 F) and two east individuals (1 M 1 F).  The sex and sample IDs are below.
+# Data
+The data are WGS from a total of 9 females and 11 males from west Kenya.  Added to this we have WGS data from 2 lab individuals (1 M, 1 F) and two east individuals (1 M 1 F).  The sex and sample IDs are below.
 ```
 BJE4429_toXBconcat.bam	F	West
 BJE4430_toXBconcat.bam	M	West
