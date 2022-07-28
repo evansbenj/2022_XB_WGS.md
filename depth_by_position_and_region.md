@@ -14,5 +14,5 @@
 # sbatch 2022_samtools_coverage.sh bamfile region_ChrXX:XX-XX
 
 module load StdEnv/2020  gcc/9.3.0 samtools/1.13
-samtools depth ${1} -r ${2} > ${1}_${2}_depth
+samtools depth -H ${1} -r ${2} > ${1}_${2}_depth
 ```
