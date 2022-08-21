@@ -36,3 +36,30 @@ it is here too:
 /home/ben/projects/rrg-ben/ben/2021_XL_v10_refgenome/XL_v10.1_all_CDS.bed
 ```
 
+Working in this directory:
+```
+/home/ben/projects/rrg-ben/ben/2022_XB_WGS/bamfiles_mappedtoXL/bams
+```
+
+Here is a bash script for using bedfiles to get depth per site from each bam (mapped to XL):
+```
+#!/bin/sh
+#SBATCH --job-name=samtools
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=1
+#SBATCH --time=4:00:00
+#SBATCH --mem=2gb
+#SBATCH --output=samtools.%J.out
+#SBATCH --error=samtools.%J.err
+#SBATCH --account=def-ben
+
+# to execute type this:
+# sbatch 2022_samtools_coverage.sh bamfile path_and_bed_filename.bed prefix
+
+module load StdEnv/2020  gcc/9.3.0 samtools/1.13
+samtools depth -H ${1} -b ${2} > ${1}_${3}_depth
+```
+it is located here:
+```
+/home/ben/projects/rrg-ben/ben/2021_Austin_XB_genome/ben_scripts/2022_samtools_coverage_bedfile.sh
+```
