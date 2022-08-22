@@ -19,7 +19,8 @@ Here is the XB adult liver transcriptome assembly:
 
 Counts are here for tads:
 ```
-/home/evanslab/borealis_tadpole_transcriptome/data/transcriptome/de_result/de_edgeR_result_combine_detail
+/home/evanslab/borealis_tadpole_transcriptome/data/transcriptome/combine_de_count_transcript/borTad_borGenome_deseq2_tpm_combine_st46.csv
+/home/evanslab/borealis_tadpole_transcriptome/data/transcriptome/combine_de_count_transcript/borTad_borGenome_deseq2_tpm_combine_st48.csv
 ```
 Here are counts by individual for adult liver:
 ```
