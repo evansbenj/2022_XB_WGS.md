@@ -1,3 +1,8 @@
+# Working directory
+```
+/home/ben/projects/rrg-ben/ben/2022_XB_WGS/bamfiles_mappedtoXL/bams
+```
+
 # Using samtools:
 ```
 #!/bin/sh
