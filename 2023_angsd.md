@@ -25,3 +25,8 @@ Save only highly significant values for plotting, for example:
 ```
 zcat out_Chr9_10S_additive_F1.lrt0.gz | awk '$7 > 0.001 { next } { print }'> 2023_XB_mappedtoXL_Chr9_10S_P_gt_0.001_only.txt
 ```
+
+Concatenate all the files for each chr but save the header:
+```
+awk 'FNR==1 && NR!=1 { while (/^<header>/) getline; } 1 {print}' 2023*.txt >all.txt
+```
