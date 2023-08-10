@@ -28,5 +28,5 @@ zcat out_Chr9_10S_additive_F1.lrt0.gz | awk '$7 > 0.001 { next } { print }'> 202
 
 Concatenate all the files for each chr but save the header:
 ```
-awk 'FNR==1 && NR!=1 { while (/^<header>/) getline; } 1 {print}' 2023*.txt >all.txt
+head -1 allo_1_chr1S_mat_progeny_haplot_wide.txt > all_mat.txt; awk 'FNR>1{print}' *mat*wide.txt >> all_mat.txt
 ```
