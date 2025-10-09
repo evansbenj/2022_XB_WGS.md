@@ -15,7 +15,10 @@ Here is the XB adult liver transcriptome assembly:
 ```
 /home/evanslab/borealis_adultFamily_RNAseq/borealis_liver_transcriptome/build_transcriptome/borealis_adult_liver_transcriptome_trinityout.fasta
 ```
-
+Here is an assembly made from adult gonads (testis, ovary) and also adult liver:
+```
+/home/evanslab/borealis_adultFamily_RNAseq/borealis_both_tissues_transcriptome/data/transcriptome/build_transcriptome/borealis_transcriptome_trinityOut.fasta
+```
 
 Counts are here for tads:
 ```
