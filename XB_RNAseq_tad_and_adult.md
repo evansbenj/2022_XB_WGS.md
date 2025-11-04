@@ -16,6 +16,8 @@ I have the joint tad transcriptome assembly and counts on nibi here:
 /home/ben/projects/rrg-ben/ben/2022_XB_WGS/XB_RNAseq_gonad_transcriptome
 ```
 
+Importantly there are counts from two different tadpole stages (st 46, 48), two different analyses (deseq2, edge2), and with the locations mapped to two different genomes (XL, XB).
+
 I also have the tad files on info here (after transferring to info115):
 ```
 /home/evanslab/borealis_tadpole_transcriptome/
