@@ -7,6 +7,7 @@ Goal: I need to evaluate how and whether each W-linked exon/transcript is expres
 * I can also blast the XB sequence from each exon against the XB genome to see if there are any divergent positions. If not then this is an autosomal transcript
 * For XB transcripts that have a hit (and divergence - especially at W-linked SNPs), I can get the count data from male and female tads at stage 46 and 48
 * I may want to download the transcripts and genomic regions and align them to pinpoint whether the transcripts have W-linked variation
+* HOWEVER, there may not be W-linked SNPs in the coding region; this is easy to check.
 
 
 
