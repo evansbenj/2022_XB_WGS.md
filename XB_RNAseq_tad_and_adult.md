@@ -1,5 +1,10 @@
 # Tad expression from Xue's work
-I have the tad files on info here (after transferring to info115):
+I have the joint tad transcriptome assembly and counts on nibi here:
+```
+/home/ben/projects/rrg-ben/ben/2022_XB_WGS/XB_RNAseq_gonad_transcriptome
+```
+
+I also have the tad files on info here (after transferring to info115):
 ```
 /home/evanslab/borealis_tadpole_transcriptome/
 ```
