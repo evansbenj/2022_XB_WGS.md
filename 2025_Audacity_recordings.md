@@ -1,6 +1,6 @@
 # Audacity recordings
 
-In audio setup, need to make sure that the inpu tdevice is set to audiovox so that the hydrophone is being used instead of the built-in mic
+In audacity "Preferences" and "Audio Setup", need to make sure that the input device is set to audiovox so that the hydrophone is being used instead of the built-in mic
 
 Other settings:
 
