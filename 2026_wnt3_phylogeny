@@ -1,0 +1,26 @@
+# Download WGS data from NCBI
+```
+module load StdEnv/2020 gcc/9.3.0 'sra-toolkit/3.0.0'
+fasterq-dump SRR35972780 SRR35973704 SRR35964371 SRR31189741	
+```
+this is for muel, fisch, fras, and cliv respectively
+# Trim and map data as usual
+
+# Calculate depth of mapped reads
+
+```
+#!/bin/sh
+#SBATCH --job-name=samtools_depth
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=1
+#SBATCH --time=12:00:00
+#SBATCH --mem=8gb
+#SBATCH --output=samtools_depth.%J.out
+#SBATCH --error=samtools_depth.%J.err
+#SBATCH --account=rrg-ben
+
+module load StdEnv/2023  gcc/12.3 samtools/1.20
+samtools coverage -q 20 --plot-depth ${1} -o ${1}_coverage.txt
+```
+
+
