@@ -49,5 +49,5 @@ cat XXX.vcf | vcf-to-tab > XXX.tab
 
 Do model finding and bootstrap all at once:
 ```
-iqtree -s example.phy -B 1000 -alrt 1000
+/home/ben/projects/rrg-ben/ben/2022_XB_WGS/Iridian_genomez/iqtree3/build/iqtree3 -s wnt3_for_genetree_CDS_only.nex -B 1000 -alrt 1000
 ```
