@@ -45,3 +45,9 @@ cat XXX.vcf | vcf-to-tab > XXX.tab
 
 # Process file with excel; check for heterozygous positions
 
+# Estimate phylogeny with IQtree
+
+Do model finding and bootstrap all at once:
+```
+iqtree -s example.phy -B 1000 -alrt 1000
+```
