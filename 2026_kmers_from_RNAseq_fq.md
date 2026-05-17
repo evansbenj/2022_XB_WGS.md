@@ -117,3 +117,24 @@ The target is a fasta file with each kmer from the target seq
 ```
 
 This worked perfectly. Only females have kmers from XBW. Yeay!
+
+# Pulling out reads with specific kmers
+
+Not needed for XB but useful for allo:
+```
+#!/bin/sh
+#SBATCH --job-name=makemeryldb
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=4
+#SBATCH --time=2:00:00
+#SBATCH --mem=128gb
+#SBATCH --output=makemeryldb.%J.out
+#SBATCH --error=makemeryldb.%J.err
+#SBATCH --account=rrg-ben
+
+
+/home/ben/projects/rrg-ben/ben/2025_bin/meryl/build/bin/meryl-lookup -include \
+  -sequence ${1}__trim_R1.fq.gz ${1}__trim_R2.fq.gz \
+  -mers allo_dmh32W_target_kmers.meryl \
+  -output ${1}_dhx32_R1.fq.gz ${1}_dhx32_R2.fq.gz
+```
