@@ -13,3 +13,21 @@ This has to be done on rorqual
 https://docs.alliancecan.ca/wiki/AlphaFold3
 
 First ask AI to convert a fasta file to json format for alphafold3
+
+After this, you need to convert to pdb format using this script
+```python
+python - <<'PY'
+from Bio.PDB import MMCIFParser, PDBIO
+
+cif_file = "/scratch/ben/alphafold/inference-output/XB_wnt3W_proteinz/XB_wnt3W_proteinz_model.cif"
+
+parser = MMCIFParser(QUIET=True)
+structure = parser.get_structure("model", cif_file)
+
+io = PDBIO()
+io.set_structure(structure)
+io.save("XB_wnt3W_proteinz.pdb")
+
+print("Wrote XB_wnt3W_proteinz.pdb")
+PY
+```
