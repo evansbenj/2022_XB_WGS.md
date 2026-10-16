@@ -15,6 +15,11 @@ https://docs.alliancecan.ca/wiki/AlphaFold3
 First ask AI to convert a fasta file to json format for alphafold3
 
 After this, you need to convert to pdb format using this script
+
+```
+python -c "import Bio; print(Bio.__version__)"
+pip install --user biopython
+```
 ```python
 python - <<'PY'
 from Bio.PDB import MMCIFParser, PDBIO
